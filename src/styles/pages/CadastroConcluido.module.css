@@ -1,0 +1,60 @@
+.forgotPasswordContainer {
+  width: 380px;
+  max-width: 90%;
+
+  height: auto;
+  background: var(--background);
+
+  border-radius: 10px;
+
+  padding: 20px 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.concludedRegisterDescription {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.inputText + .inputText {
+  margin-top: 16px;
+}
+
+.sendButton {
+  max-width: 90%;
+  padding: 10px 15px;
+  border: 0;
+  outline: none;
+
+  margin-top: 24px;
+
+  background-color: var(--button-color);
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.sendButton:hover {
+  opacity: 0.8;
+}
+
+.logIn {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+
+  margin-top: 16px;
+
+  align-self: flex-start;
+
+  transition: opacity 0.2s;
+}
+
+.logIn:hover {
+  opacity: 0.8;
+}
