@@ -4,7 +4,8 @@ import Layout from '../components/Layout';
 import styles from '../styles/pages/EsqueciMinhaSenha.module.css';
 
 const EsqueciMinhaSenha = () => (
-  <Layout title="">
+  // <Layout title="">
+  <div className={styles.fullPage}>
     <div className={styles.forgotPasswordContainer}>
 
       <h2 className={styles.forgotPasswordTitle}>Esqueci minha senha</h2>
@@ -16,6 +17,7 @@ const EsqueciMinhaSenha = () => (
         variant="outlined"
         label="Email"
         type="email"
+        className={styles.inputText}
       />
 
         <Link href="/home">
@@ -28,7 +30,8 @@ const EsqueciMinhaSenha = () => (
             <a className={styles.logIn}>Já tenho conta</a>
         </Link>
     </div>
-  </Layout>
+  </div>
+  // </Layout>
 )
 
 export default EsqueciMinhaSenha;

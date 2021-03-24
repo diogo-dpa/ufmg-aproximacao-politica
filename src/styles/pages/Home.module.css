@@ -1,13 +1,28 @@
+.fullPage{
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+}
+
+.mainTitle{
+  margin-bottom: 20px;
+}
+
 .homeContainer {
   width: 380px;
   max-width: 90%;
 
   height: 402px;
-  background: var(--background);
+  background: var(--mainBox);
 
   border-radius: 10px;
 
-  padding: 10px 20px;
+  padding: 20px 40px;
 
   display: flex;
   flex-direction: column;
@@ -15,7 +30,12 @@
   justify-content: space-evenly;
 }
 
+.textInput{
+  width: 100%;
+}
+
 .loginButton {
+  width: 150px;
   max-width: 90%;
   padding: 10px 15px;
 
@@ -34,6 +54,14 @@
   opacity: 0.8;
 }
 
+.usefulLink{
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .forgotPassword,
 .signUp {
   font-size: 0.875rem;
@@ -42,6 +70,10 @@
   align-self: flex-start;
 
   transition: opacity 0.2s;
+}
+
+.signUp{
+  margin-top: 12px;
 }
 
 .forgotPassword:hover {

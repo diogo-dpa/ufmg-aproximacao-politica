@@ -1,13 +1,24 @@
+.fullPage{
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+}
+
 .cadastroContainer {
   width: 380px;
   max-width: 90%;
 
   height: auto;
-  background: var(--background);
+  background: var(--mainBox);
 
   border-radius: 10px;
 
-  padding: 20px 25px;
+  padding: 20px 40px;
 
   display: flex;
   flex-direction: column;
@@ -15,11 +26,20 @@
   justify-content: space-evenly;
 }
 
+.registerTitle{
+  margin-bottom: 20px;
+}
+
+.inputText {
+  width: 100%;
+}
+
 .inputText + .inputText {
   margin-top: 16px;
 }
 
 .registerButton {
+  width: 150px;
   max-width: 90%;
   padding: 10px 15px;
   border: 0;
