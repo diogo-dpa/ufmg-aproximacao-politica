@@ -1,0 +1,49 @@
+.fullPage{
+    width: 100%;
+    min-height: 100vh;
+
+    position: relative;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: var(--background);
+  }
+
+  .mainTitle {
+    max-width: 90%;
+
+    margin-bottom: 40px;
+    margin-left: 20px;
+  }
+
+  .famousPoliticalPartiesContainer {
+
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: auto;
+  
+    background: var(--mainBox);
+  
+    padding: 20px 20px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .famousPartiesTitle{
+    font-size: 16px;
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .famousPartiesSection{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+  }

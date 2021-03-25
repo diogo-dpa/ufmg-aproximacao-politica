@@ -1,0 +1,16 @@
+.famousPoliticalComponent{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.imgPoliticalParties{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.famousPoliticalComponent + .famousPoliticalComponent{
+    margin-left: 20px;
+}
