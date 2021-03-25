@@ -13,11 +13,20 @@ body {
   --inactive: hsla(0, 0, 0, 0.33);
   --border-color: #a6a6ab;
   --button-color: #9aff96;
+  --button-color-white: #ffffff;
   --footer-background: #4a4b4c;
 }
 
-h1, h2, h3, h4, h5, h6, p{
+body{
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+h1, h2, h3, h4, h5, h6, p, strong, li, span{
   margin: 0;
+  color: var(--text-primary);
 }
 
 a {
