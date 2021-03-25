@@ -1,0 +1,7 @@
+.menuItem{
+  font-size: 35px;
+}
+
+.menuItem + .menuItem{
+  margin-top: 24px;
+}

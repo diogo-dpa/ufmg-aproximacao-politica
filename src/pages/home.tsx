@@ -4,6 +4,7 @@ import styles from '../styles/pages/LoggedHome.module.css';
 
 import { GetStaticProps } from 'next'
 import FamousPoliticalCard from '../components/FamousPoliticalCard'
+import MenuMobile from '../components/MenuMobile'
 
 const politicalParties = [
     {
@@ -37,6 +38,7 @@ const LoggedHome = ({ politicalParties }: LoggedHomeProps ) => {
   return (
     // <Layout title="">
     <div className={styles.fullPage}>
+      <MenuMobile />
       <h1 className={styles.mainTitle}>Acompanhe o dia a dia na política</h1>
 
       <div className={styles.famousPoliticalPartiesContainer}>
