@@ -45,16 +45,12 @@
 }
 
 .sendButton {
-  width: 150px;
   max-width: 90%;
   padding: 10px 15px;
   border: 0;
   outline: none;
 
   margin-top: 24px;
-
-  background-color: var(--button-color);
-  cursor: pointer;
 
   font-size: 18px;
   font-weight: 600;
