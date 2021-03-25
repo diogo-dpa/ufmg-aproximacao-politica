@@ -8,7 +8,7 @@ import FamousPoliticalCard from '../components/FamousPoliticalCard'
 const politicalParties = [
     {
         imgUrl: "/images/psolImg.jpg",
-        linkToRedirect: "/partidos/psol"
+        linkToRedirect: "/partidos/teste"
     },
     {
         imgUrl: "/images/ptImg.png",

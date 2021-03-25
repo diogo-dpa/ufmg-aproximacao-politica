@@ -3,6 +3,13 @@
     height: 60px;
     border-radius: 50%;
     background-color: #fff;
+    cursor: pointer;
+
+    transition: opacity 0.2s;
+}
+
+.famousPoliticalComponent:hover{
+    opacity: 0.8;
 }
 
 .imgPoliticalParties{
