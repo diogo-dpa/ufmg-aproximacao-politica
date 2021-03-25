@@ -107,7 +107,7 @@ const Partido = ({imgUrl, nome, descricao, bandeiras, numerosRepresentantes, rep
                 <img className={styles.imgPartido} src={imgUrl} alt={nome} />
                 <strong className={styles.nomePartido}>{nome}</strong>
 
-                <p>{descricao}</p>
+                <p className={styles.descricaoPartido}>{descricao}</p>
 
                 <ul className={styles.bandeirasPart}>
                     {

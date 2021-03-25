@@ -57,10 +57,14 @@
       margin-bottom: 16px;
   }
 
+  .descricaoPartido{
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 16px;
+  }
+
   .bandeirasPart{
       padding: 0;
-
-      margin-top: 16px;
 
       align-self: flex-start;
       display: flex;
@@ -79,6 +83,7 @@
 
   .descricaoBandeira{
       margin-left: 10px;
+      font-size: 14px;
   }
 
   .titleRepresentantes{
