@@ -11,7 +11,7 @@
     background: var(--background);
   }
 
-  .partidoContainer {
+  .pessoaContainer, .areaInProgress {
     width: 380px;
     max-width: 90%;
   
@@ -42,9 +42,10 @@
     align-items: flex-start;
   }
 
-  .imgPartido{
+  .imgPessoa{
       width: 150px;
       height: 150px;
+      
       border-radius: 50%;
 
       position: absolute;
@@ -52,48 +53,57 @@
       right: 50px;
   }
 
-  .nomePartido{
+  .imgPartido{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+
+      position: absolute;
+      top: -10px;
+      right: 30px;
+  }
+
+  .nomePessoa{
       font-size: 28px;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
+    }
+    
+    .roleAndState{
+        font-size: 16px;
+        color: var(--button-color);
+        margin-bottom: 16px;
   }
 
   .descricaoPartido{
       font-size: 16px;
       line-height: 22px;
+      color: #fff;
       margin-bottom: 16px;
   }
 
-  .bandeirasPart{
-      padding: 0;
-
-      align-self: flex-start;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+  .areaInProgress{
+      margin-top: 24px;
+      padding: 20px 40px;
   }
 
-  .listItem{
-      display: flex;
-      align-items: center;
+
+  .titleAreaInProgress{
+    font-size: 28px;
+    align-self: flex-start;
+    margin-bottom: 32px;
   }
 
-  .listItem + .listItem{
-      margin-top: 16px;
-  }
+  .emptyArea{
+    width: 90%;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: 0 auto;
 
-  .descricaoBandeira{
-      margin-left: 10px;
-      font-size: 14px;
-  }
+    background: var(--mainBox);
 
-  .titleRepresentantes{
-      align-self: flex-start;
-      margin-bottom: 20px;
-  }
+    color: #fff;
 
-  .partidoNumber{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
