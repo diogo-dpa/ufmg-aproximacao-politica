@@ -14,7 +14,7 @@ const EsqueciMinhaSenha = () => (
       </p>
 
       <TextField
-        variant="outlined"
+        variant="standard"
         label="Email"
         type="email"
         className={styles.inputText}

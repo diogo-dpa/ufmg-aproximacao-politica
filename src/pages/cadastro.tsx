@@ -13,35 +13,35 @@ const Cadastro = () => {
         <h2 className={styles.registerTitle}>Cadastro</h2>
 
         <TextField
-          variant="outlined"
+          variant="standard"
           label="Nome Completo"
           type="text"
           className={styles.inputText}
         />
 
         <TextField
-          variant="outlined"
+          variant="standard"
           label="CPF"
           type="text"
           className={styles.inputText}
         />
 
         <TextField
-          variant="outlined"
+          variant="standard"
           label="Email"
           type="text"
           className={styles.inputText}
         />
 
         <TextField
-          variant="outlined"
+          variant="standard"
           label="Senha"
           type="password"
           className={styles.inputText}
         />
 
         <TextField
-          variant="outlined"
+          variant="standard"
           label="Confirme sua senha"
           type="password"
           className={styles.inputText}

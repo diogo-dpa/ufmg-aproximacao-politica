@@ -1,25 +1,22 @@
 import Link from 'next/link'
 import { TextField } from '@material-ui/core';
-import Layout from '../components/Layout';
 import styles from '../styles/pages/Home.module.css';
 
-const IndexPage = () => (
-  // <Layout title="Home | Next.js + TypeScript Example">
+const Login = () => (
   <div className={styles.fullPage}>
-      <h1 className={styles.mainTitle}>Bem vindo ao Aproximação Política</h1>
       <div className={styles.homeContainer}>
 
         <h2 className={styles.loginTitle}>Login</h2>
 
         <TextField
-          variant="outlined"
+          variant="standard"
           label="Email"
           type="text"
           className={styles.textInput}
           />
 
         <TextField
-          variant="outlined"
+          variant="standard"
           label="Senha"
           type="password"
           className={styles.textInput}
@@ -41,7 +38,6 @@ const IndexPage = () => (
           </div>
       </div>
   </div>
-  // </Layout>
 )
 
-export default IndexPage;
+export default Login;
