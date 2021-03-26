@@ -1,0 +1,23 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint-config-airbnb",
+      "eslint:recommended"
+    ],
+    "parserOptions": {"project": "./tsconfig.json"},
+    "rules": {
+      "no-console": 1,
+      "quotes": ["error", "double"],
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": 0,
+      "react/jsx-props-no-spreading": "off",
+      "@typescript-eslint/space-infix-ops": 0,
+      "@typescript-eslint/object-curly-spacing": 0,
+      "object-curly-spacing": ["error", "always"],
+      "linebreak-style": ["warn", "windows"],
+    }
+  }
