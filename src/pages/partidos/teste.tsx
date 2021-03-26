@@ -5,6 +5,7 @@ import styles from '../../styles/pages/Partidos.module.css';
 
 import PoliticalPartyData from '../../components/PoliticalPartyData';
 import RepresentativePersonCard from '../../components/RepresentativePersonCard';
+import MenuMobile from '../../components/MenuMobile';
 import FlagIcon from '@material-ui/icons/Flag';
 
 const partidoData = [
@@ -102,6 +103,7 @@ const Partido = ({imgUrl, nome, descricao, bandeiras, numerosRepresentantes, rep
     return (
     // <Layout title="Home | Next.js + TypeScript Example">
     <div className={styles.fullPage}>
+        <MenuMobile />
         <div className={styles.partidoContainer}>
             <div className={styles.infoPartido}>
                 <img className={styles.imgPartido} src={imgUrl} alt={nome} />

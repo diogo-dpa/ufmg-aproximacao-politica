@@ -24,6 +24,9 @@ const MenuMobile = () => {
         <Link href="/representantes/teste">
             <a className={stylesModule.menuItem}>Representantes</a>
         </Link>
+        <Link href="/">
+            <a className={stylesModule.menuItem}>Sair</a>
+        </Link>
       </Menu>
     );
 }
@@ -34,7 +37,8 @@ const styles = {
       width: '36px',
       height: '30px',
       right: '36px',
-      top: '36px'
+      top: '36px',
+      outline: 'none',
     },
     bmBurgerBars: {
       background: '#fff'
@@ -55,7 +59,7 @@ const styles = {
       height: '100%',
     },
     bmMenu: {
-      background: '#373a47',
+      background: '#979797BB',
       padding: '2.5em 1.5em 0',
       fontSize: '1.15em'
     },
@@ -63,7 +67,7 @@ const styles = {
       fill: '#373a47'
     },
     bmItemList: {
-      color: '#b8b7ad',
+      color: '#fff',
       padding: '0.8em',
       display: 'flex',
       flexDirection: 'column',

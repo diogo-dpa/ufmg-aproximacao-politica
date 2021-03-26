@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import { GetStaticProps } from 'next'
 import styles from '../../styles/pages/Representantes.module.css';
+import MenuMobile from '../../components/MenuMobile';
 
 const representanteData = [
     {
@@ -29,6 +30,7 @@ const Representante = ({imgUrlPessoa, imgUrlPartido, nome, role, estado, descric
     return (
     // <Layout title="Home | Next.js + TypeScript Example">
     <div className={styles.fullPage}>
+        <MenuMobile />
         <div className={styles.pessoaContainer}>
             <div className={styles.infoPartido}>
                 <img className={styles.imgPessoa} src={imgUrlPessoa} alt={nome} />
