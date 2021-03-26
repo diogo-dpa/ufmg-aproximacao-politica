@@ -9,7 +9,7 @@ import MenuMobile from '../components/MenuMobile'
 const politicalParties = [
     {
         imgUrl: "/images/psolImg.jpg",
-        linkToRedirect: "/partidos/teste"
+        linkToRedirect: "/partidos/PSOL"
     },
     {
         imgUrl: "/images/ptImg.png",

@@ -1,14 +1,17 @@
-import { GetStaticProps } from 'next'
+import { GetStaticProps, GetStaticPaths } from 'next'
+
+import { PartidoProps } from '../../interfaces/partidos'
+import { partidoDataSample } from '../../../utils/partidosData'
+import MenuMobile from '../../components/MenuMobile';
 import styles from '../../styles/pages/Partidos.module.css';
+import FlagIcon from '@material-ui/icons/Flag';
 
 import PoliticalPartyData from '../../components/PoliticalPartyData';
 import RepresentativePersonCard from '../../components/RepresentativePersonCard';
-import MenuMobile from '../../components/MenuMobile';
-import FlagIcon from '@material-ui/icons/Flag';
-import { partidoDataSample } from '../../../utils/partidosData'
 
 
-const Partido = ({imgUrl, nome, descricao, bandeiras, numerosRepresentantes, representantes} : PartidoProps) => { 
+
+const Partidoss = ({imgUrl, nome, descricao, bandeiras, numerosRepresentantes, representantes} : PartidoProps) => { 
 
     return (
     // <Layout title="Home | Next.js + TypeScript Example">
@@ -89,13 +92,34 @@ const Partido = ({imgUrl, nome, descricao, bandeiras, numerosRepresentantes, rep
     )
 };
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export default Partidoss;
 
-    return {
-        props: {
-            ...partidoDataSample[0],
-        },
-      }
+export const getStaticPaths: GetStaticPaths = async () => {
+    // Get the paths we want to pre-render based on users
+    const paths = partidoDataSample.map((partido) => ({
+      params: { nome: partido.nome },
+    }))
+
+    console.log('aqui', paths)
+  
+    // We'll pre-render only these paths at build time.
+    // { fallback: false } means other routes should 404.
+    return { paths, fallback: false }
   }
-
-export default Partido;
+  
+  // This function gets called at build time on server-side.
+  // It won't be called on client-side, so you can even do
+  // direct database queries.
+  export const getStaticProps: GetStaticProps = async ({ params }) => {
+    try {
+        console.log('okokok', params)
+      const nome = params?.nome
+      const item = partidoDataSample.find((data) => data.nome.toUpperCase() === nome)
+      // By returning { props: item }, the StaticPropsDetail component
+      // will receive `item` as a prop at build time
+      console.log('item', item)
+      return { props: { ...item } }
+    } catch (err) {
+      return { props: { errors: err.message } }
+    }
+  }
