@@ -34,16 +34,6 @@ const StaticPropsDetail = ({ item, errors }: Props) => {
 
 export default StaticPropsDetail;
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  // Get the paths we want to pre-render based on users
-  const paths = sampleUserData.map((user) => ({
-    params: { id: user.id.toString() },
-  }));
-
-  // We'll pre-render only these paths at build time.
-  // { fallback: false } means other routes should 404.
-  return { paths, fallback: false };
-};
 
 // This function gets called at build time on server-side.
 // It won't be called on client-side, so you can even do
@@ -58,4 +48,15 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   } catch (err) {
     return { props: { errors: err.message } };
   }
+};
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  // Get the paths we want to pre-render based on users
+  const paths = sampleUserData.map((user) => ({
+    params: { id: user.id.toString() },
+  }));
+
+  // We'll pre-render only these paths at build time.
+  // { fallback: false } means other routes should 404.
+  return { paths, fallback: false };
 };

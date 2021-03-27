@@ -3,7 +3,10 @@ import Link from "next/link";
 import { GetStaticProps } from "next";
 import styles from "../../styles/pages/Representantes.module.css";
 import MenuMobile from "../../components/MenuMobile";
+import { RepresentanteProps } from '../../interfaces/representantes';
+import { representanteData } from '../../utils/representantesData';
 
+/*
 const representanteData = [
   {
     imgUrlPessoa: "/images/aureaCarolina.jpg",
@@ -15,7 +18,9 @@ const representanteData = [
       "Áurea Carolina é educadora popular, especialista em gênero e igualdade pela Universidade Autônoma de Barcelona, mestra em ciência política pela UFMG e Deputada Federal eleita. Em 2016, foi candidata a vereadora em Belo Horizonte pelas Muitas/PSOL, se elegeu com a maior votação da cidade: 17.420 votos.",
   },
 ];
+*/
 
+/*
 interface RepresentanteProps {
   imgUrlPessoa: string;
   imgUrlPartido: string;
@@ -24,6 +29,7 @@ interface RepresentanteProps {
   estado: string;
   descricao: string;
 }
+*/
 
 const Representante = ({
   imgUrlPessoa,

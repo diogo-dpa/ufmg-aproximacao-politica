@@ -94,18 +94,6 @@ const Partidoss = ({
 
 export default Partidoss;
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  // Get the paths we want to pre-render based on users
-  const paths = partidoDataSample.map((partido) => ({
-    params: { nome: partido.nome },
-  }));
-
-  console.log("aqui", paths);
-
-  // We'll pre-render only these paths at build time.
-  // { fallback: false } means other routes should 404.
-  return { paths, fallback: false };
-};
 
 // This function gets called at build time on server-side.
 // It won't be called on client-side, so you can even do
@@ -116,12 +104,25 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     const nome = params?.nome;
     const item = partidoDataSample.find(
       (data) => data.nome.toUpperCase() === nome,
-    );
-    // By returning { props: item }, the StaticPropsDetail component
-    // will receive `item` as a prop at build time
-    console.log("item", item);
-    return { props: { ...item } };
-  } catch (err) {
-    return { props: { errors: err.message } };
-  }
-};
+      );
+      // By returning { props: item }, the StaticPropsDetail component
+      // will receive `item` as a prop at build time
+      console.log("item", item);
+      return { props: { ...item } };
+    } catch (err) {
+      return { props: { errors: err.message } };
+    }
+  };
+
+  export const getStaticPaths: GetStaticPaths = async () => {
+    // Get the paths we want to pre-render based on users
+    const paths = partidoDataSample.map((partido) => ({
+      params: { nome: partido.nome },
+    }));
+  
+    console.log("aqui", paths);
+  
+    // We'll pre-render only these paths at build time.
+    // { fallback: false } means other routes should 404.
+    return { paths, fallback: false };
+  };
