@@ -20,7 +20,7 @@ const politicalParties = [
   },
   {
     imgUrl: "/images/mdbImg.jpg",
-    linkToRedirect: "/partidos/psol",
+    linkToRedirect: "/partidos/MDB",
   },
 ];
 
