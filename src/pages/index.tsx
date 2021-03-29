@@ -41,8 +41,15 @@ const Login = () => {
         }
         
       }else{
-        alert("Usuário válido")
-        router.push('/home');
+
+        if(inputEmail.current.value !== 'admin@email.com' || inputPassword.current.value !== 'senha123'){
+          alert("Credenciais inválidas")
+          inputEmail.current.value = '';
+          inputPassword.current.value = '';
+        }else{
+          alert("Seja bem-vindo(a)!")
+          router.push('/home');
+        }
       }
   }
 
