@@ -1,173 +1,176 @@
-.fullPage{
-    width: 100%;
-    min-height: 100vh;
+.fullPage {
+  width: 100%;
+  min-height: 100vh;
 
-    padding: 150px 0px;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  padding: 150px 0px;
 
-  .partidoContainer {
-    width: 380px;
-    max-width: 90%;
-  
-    height: auto;
-    background: #16450577;
-  
-    border-radius: 10px;
-  
-    padding: 20px 40px;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .partidoContainer + .partidoContainer{
-    margin-top: 24px;
-  }
-
-  .infoPartido{
-      width: 100%;
-    position: relative;
-
-    padding-top: 80px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .imgPartido{
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-
-      position: absolute;
-      top: -100px;
-      right: 60px;
-  }
-
-  .nomePartido{
-      font-size: 28px;
-      margin-bottom: 16px;
-  }
-
-  .descricaoPartido{
-      font-size: 16px;
-      line-height: 22px;
-      margin-bottom: 16px;
-  }
-
-  .bandeirasPart{
-      padding: 0;
-
-      align-self: flex-start;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .listItem{
-      display: flex;
-      align-items: center;
-  }
-
-  .listItem + .listItem{
-      margin-top: 16px;
-  }
-
-  .descricaoBandeira{
-      margin-left: 10px;
-      font-size: 14px;
-  }
-
-  .titleRepresentantes{
-      align-self: flex-start;
-      margin-bottom: 20px;
-  }
-
-  .partidoNumber{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      align-items: center;
-  }
-
-  .areaInProgress{
-    width: 90%;
-    margin-top: 24px;
-    padding: 20px 40px;
-    border-radius: 5px;
-    background: var(--mainBox);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+.partidoContainer {
+  width: 380px;
+  max-width: 90%;
 
-.titleAreaInProgress{
+  height: auto;
+  background: #16450577;
+  /* backdrop-filter: blur(10px); */
+
+  border-radius: 10px;
+
+  padding: 20px 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partidoContainer + .partidoContainer {
+  margin-top: 24px;
+}
+
+.infoPartido {
+  width: 100%;
+  position: relative;
+
+  padding-top: 80px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.imgPartido {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: -100px;
+  right: 60px;
+}
+
+.nomePartido {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.descricaoPartido {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+
+.bandeirasPart {
+  padding: 0;
+
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+}
+
+.listItem + .listItem {
+  margin-top: 16px;
+}
+
+.descricaoBandeira {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.titleRepresentantes {
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.partidoNumber {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.areaInProgress {
+  width: 90%;
+  margin-top: 24px;
+  padding: 20px 40px;
+  border-radius: 5px;
+  background: var(--mainBox);
+  backdrop-filter: blur(10px);
+}
+
+.titleAreaInProgress {
   font-size: 28px;
   align-self: flex-start;
   margin-bottom: 32px;
 }
 
-.titleArea{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.titleArea {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.seeDetails{
-    font-size: 13px;
-    color: #fff;
-    margin-bottom: 32px;
+.seeDetails {
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 32px;
 }
 
-.emptyArea, .notEmptyArea{
+.emptyArea,
+.notEmptyArea {
   width: 100%;
   padding: 20px 30px;
   border-radius: 10px;
-  
+
   background: var(--mainBox);
   -webkit-backdrop-filter: standard(8px);
   backdrop-filter: blur(8px);
-  
+
   color: #fff;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.notEmptyArea{
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 20px 20px;
+.notEmptyArea {
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 20px;
 }
 
-.biggestArea, .percentArea{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
+.biggestArea,
+.percentArea {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
 }
 
-.biggerNumberData{
-    font-size: 28px;
-    line-height: 43px;
-    color: #fff;
+.biggerNumberData {
+  font-size: 28px;
+  line-height: 43px;
+  color: #fff;
 }
 
-.smallerNumberData{
-    font-size: 22px;
-    line-height: 43px;
-    color: #fff;
+.smallerNumberData {
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
 }
 
-.sublabel{
-    font-size: 11px;
-    color: #fff;
+.sublabel {
+  font-size: 11px;
+  color: #fff;
 }

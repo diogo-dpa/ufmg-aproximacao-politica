@@ -1,4 +1,4 @@
-.fullPage{
+.fullPage {
   width: 100%;
   min-height: 100vh;
 
@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-.mainTitle{
+.mainTitle {
   margin-bottom: 20px;
 }
 
@@ -29,11 +29,11 @@
   justify-content: space-evenly;
 }
 
-.loginTitle{
+.loginTitle {
   color: #fff;
 }
 
-.textInput{
+.textInput {
   width: 100%;
   color: #fff;
 }
@@ -60,7 +60,7 @@
   opacity: 0.8;
 }
 
-.usefulLink{
+.usefulLink {
   align-self: flex-start;
   display: flex;
   flex-direction: column;
@@ -78,7 +78,7 @@
   transition: opacity 0.2s;
 }
 
-.signUp{
+.signUp {
   margin-top: 12px;
 }
 

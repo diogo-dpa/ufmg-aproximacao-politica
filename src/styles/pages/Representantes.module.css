@@ -1,162 +1,165 @@
-.fullPage{
-    width: 100%;
-    min-height: 100vh;
+.fullPage {
+  width: 100%;
+  min-height: 100vh;
 
-    padding: 150px 0px;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  padding: 150px 0px;
 
-  .pessoaContainer, .areaInProgress {
-    width: 380px;
-    max-width: 90%;
-  
-    height: auto;
-    background: #16450577;
-  
-    border-radius: 10px;
-  
-    padding: 20px 40px;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .partidoContainer + .partidoContainer{
-    margin-top: 24px;
-  }
+.pessoaContainer,
+.areaInProgress {
+  width: 380px;
+  max-width: 90%;
 
-  .infoPartido{
-      width: 100%;
-    position: relative;
+  height: auto;
+  background: #16450577;
+  /* backdrop-filter: blur(10px); */
 
-    padding-top: 80px;
+  border-radius: 10px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  padding: 20px 40px;
 
-  .imgPessoa{
-      width: 150px;
-      height: 150px;
-      
-      border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-      position: absolute;
-      top: -100px;
-      right: 65px;
-  }
+.partidoContainer + .partidoContainer {
+  margin-top: 24px;
+}
 
-  .imgPartido{
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
+.infoPartido {
+  width: 100%;
+  position: relative;
 
-      position: absolute;
-      top: -10px;
-      right: 30px;
-  }
+  padding-top: 80px;
 
-  .nomePessoa{
-      font-size: 28px;
-      margin-bottom: 8px;
-    }
-    
-    .roleAndState{
-        font-size: 16px;
-        color: var(--button-color);
-        margin-bottom: 16px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-  .descricaoPartido{
-      font-size: 16px;
-      line-height: 22px;
-      color: #fff;
-      margin-bottom: 16px;
-  }
+.imgPessoa {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+
+  position: absolute;
+  top: -100px;
+  right: 65px;
+}
+
+.imgPartido {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: -10px;
+  right: 30px;
+}
+
+.nomePessoa {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.roleAndState {
+  font-size: 16px;
+  color: var(--button-color);
+  margin-bottom: 16px;
+}
+
+.descricaoPartido {
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  margin-bottom: 16px;
+}
 /* 
   .areaInProgress{
       margin-top: 24px;
       padding: 20px 40px;
   } */
 
-
-  .titleAreaInProgress{
-    font-size: 28px;
-    align-self: flex-start;
-    margin-bottom: 32px;
-  }
-
-  .areaInProgress{
-    width: 90%;
-    margin-top: 24px;
-    padding: 20px 40px;
-    border-radius: 5px;
-    background: var(--mainBox);
+.titleAreaInProgress {
+  font-size: 28px;
+  align-self: flex-start;
+  margin-bottom: 32px;
 }
 
-
-.titleArea{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.areaInProgress {
+  width: 90%;
+  margin-top: 24px;
+  padding: 20px 40px;
+  border-radius: 5px;
+  background: var(--mainBox);
+  backdrop-filter: blur(10px);
 }
 
-.seeDetails{
-    font-size: 13px;
-    color: #fff;
-    margin-bottom: 32px;
+.titleArea {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.emptyArea, .notEmptyArea{
+.seeDetails {
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.emptyArea,
+.notEmptyArea {
   width: 100%;
   padding: 20px 30px;
   border-radius: 10px;
-  
+
   background: var(--mainBox);
-  -webkit-backdrop-filter: standard(8px);
-  backdrop-filter: blur(8px);
-  
+  -webkit-backdrop-filter: standard(10px);
+  backdrop-filter: blur(10px);
+
   color: #fff;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.notEmptyArea{
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 20px 20px;
+.notEmptyArea {
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 20px;
 }
 
-.biggestArea, .percentArea{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
+.biggestArea,
+.percentArea {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
 }
 
-.biggerNumberData{
-    font-size: 28px;
-    line-height: 43px;
-    color: #fff;
+.biggerNumberData {
+  font-size: 28px;
+  line-height: 43px;
+  color: #fff;
 }
 
-.smallerNumberData{
-    font-size: 22px;
-    line-height: 43px;
-    color: #fff;
+.smallerNumberData {
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
 }
 
-.sublabel{
-    font-size: 11px;
-    color: #fff;
+.sublabel {
+  font-size: 11px;
+  color: #fff;
 }

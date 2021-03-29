@@ -1,54 +1,52 @@
-.fullPage{
-    width: 100%;
-    height: 100%;
+.fullPage {
+  width: 100%;
+  height: 100%;
 
-    position: relative;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    
-  }
+  position: relative;
 
-  .mainTitle {
-    max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
 
-    margin-bottom: 40px;
-    margin-left: 20px;
-  }
+.mainTitle {
+  max-width: 90%;
 
-  .famousPoliticalPartiesContainer {
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
 
-    position: absolute;
-    bottom: 0;
+.famousPoliticalPartiesContainer {
+  position: absolute;
+  bottom: 0;
 
-    width: 100%;
-    height: auto;
-  
-    /* background: var(--mainBox);
+  width: 100%;
+  height: auto;
+
+  /* background: var(--mainBox);
     backdrop-filter: blur(20px); */
 
-    background-color: rgba(22, 69, 5,.25);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-  
-    padding: 20px 20px;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-  }
+  background-color: rgba(22, 69, 5, 0.25);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
 
-  .famousPartiesTitle{
-    font-size: 16px;
-    max-width: 90%;
-    margin-bottom: 20px;
-  }
+  padding: 20px 20px;
 
-  .famousPartiesSection{
-    padding: 20px 0px;
-    display: flex;
-    justify-content: space-evenly;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.famousPartiesTitle {
+  font-size: 16px;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+
+.famousPartiesSection {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}

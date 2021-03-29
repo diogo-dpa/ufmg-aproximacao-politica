@@ -7,10 +7,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --primary: #164505;
   --mainBox: rgba(22, 69, 5, 0.7);
-  --background: #0A2400;
+  --background: #0a2400;
   --secondary: #ebe9e8;
   --text-primary: #ffffff;
-  --text-secondary: #FFFFFFAA;
+  --text-secondary: #ffffffaa;
   --inactive: hsla(0, 0, 0, 0.33);
   --border-color: #a6a6ab;
   --button-color: #9aff96;
@@ -20,23 +20,31 @@ body {
   overflow-x: hidden;
 }
 
-#__next{
+#__next {
   height: 100%;
 }
 
-body{
+body {
   background-image: url("/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
-h1, h2, h3, h4, h5, h6, p, strong, li, span{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+strong,
+li,
+span {
   margin: 0;
   color: var(--text-primary);
 }
 
-button{
+button {
   width: 80%;
   background-color: var(--button-color-white);
   border-radius: 10px;
@@ -48,7 +56,7 @@ a {
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -56,16 +64,15 @@ ul{
   box-sizing: border-box;
 }
 
-
 /* Ajustes no TextInput */
-.MuiFormLabel-root{
+.MuiFormLabel-root {
   color: #fff !important;
 }
 
-.MuiInputBase-input{
+.MuiInputBase-input {
   color: #fff !important;
 }
 
-.MuiInput-underline:before{
+.MuiInput-underline:before {
   border-bottom: 1px solid #fff !important;
 }
