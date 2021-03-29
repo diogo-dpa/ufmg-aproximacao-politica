@@ -12,6 +12,7 @@ const Representante = ({
   role,
   estado,
   descricao,
+  gastos
 }: RepresentanteProps) => {
   return (
     <div className={styles.fullPage}>
@@ -31,8 +32,30 @@ const Representante = ({
       </div>
 
       <div className={styles.areaInProgress}>
-        <h3 className={styles.titleAreaInProgress}>Gastos</h3>
-        <div className={styles.emptyArea}>Em desenvolvimento</div>
+        <div className={styles.titleArea}>
+          <h3 className={styles.titleAreaInProgress}>Gastos</h3>
+          <span className={styles.seeDetails}>Ver detalhes</span>
+        </div>
+        <div className={styles.notEmptyArea}>
+          <div className={styles.biggestArea}>
+            <span className={styles.biggerNumberData}>
+              R$ {gastos.emReais}
+            </span>
+            <span className={styles.sublabel}>
+              GASTOS TOTAIS
+            </span>
+          </div>
+
+          <div className={styles.percentArea}>
+            <span className={styles.smallerNumberData}>
+              {gastos.emPorcentagem}%
+            </span>
+            <span className={styles.sublabel}>
+              % DO TODO
+            </span>
+          </div>
+
+        </div>
       </div>
 
       <div className={styles.areaInProgress}>

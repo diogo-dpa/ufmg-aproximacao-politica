@@ -76,6 +76,10 @@ export const partidoDataSample: PartidoProps[] = [
         linkToRedirect: "/representantes/JaderBarbalho"
       },
     ],
+    gastos: {
+      emReais: "944,0M",
+      emPorcentagem: "12,2"
+    }
   },
   {
     imgUrl: "/images/psolImg.jpg",
@@ -152,5 +156,9 @@ export const partidoDataSample: PartidoProps[] = [
         linkToRedirect: "/representantes/CidoSobral"
       },
     ],
+    gastos: {
+      emReais: "521,2M",
+      emPorcentagem: "2,7"
+    }
   }
 ];

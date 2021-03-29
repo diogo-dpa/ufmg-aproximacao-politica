@@ -16,6 +16,7 @@ const Partidoss = ({
   bandeiras,
   numerosRepresentantes,
   representantes,
+  gastos
 }: PartidoProps) => {
   return (
     // <Layout title="Home | Next.js + TypeScript Example">
@@ -86,6 +87,43 @@ const Partidoss = ({
             state={item.estado}
           />
         ))}
+      </div>
+
+      <div className={styles.areaInProgress}>
+        <div className={styles.titleArea}>
+          <h3 className={styles.titleAreaInProgress}>Gastos</h3>
+          <span className={styles.seeDetails}>Ver detalhes</span>
+        </div>
+        <div className={styles.notEmptyArea}>
+          <div className={styles.biggestArea}>
+            <span className={styles.biggerNumberData}>
+              R$ {gastos.emReais}
+            </span>
+            <span className={styles.sublabel}>
+              GASTOS TOTAIS
+            </span>
+          </div>
+
+          <div className={styles.percentArea}>
+            <span className={styles.smallerNumberData}>
+              {gastos.emPorcentagem}%
+            </span>
+            <span className={styles.sublabel}>
+              % DO TODO
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <div className={styles.areaInProgress}>
+        <h3 className={styles.titleAreaInProgress}>Jurídico</h3>
+        <div className={styles.emptyArea}>Em desenvolvimento</div>
+      </div>
+
+      <div className={styles.areaInProgress}>
+        <h3 className={styles.titleAreaInProgress}>Viagens</h3>
+        <div className={styles.emptyArea}>Em desenvolvimento</div>
       </div>
     </div>
     // </Layout>

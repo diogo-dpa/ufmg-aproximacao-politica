@@ -96,3 +96,78 @@
       gap: 20px;
       align-items: center;
   }
+
+  .areaInProgress{
+    width: 90%;
+    margin-top: 24px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background: var(--mainBox);
+}
+
+
+.titleAreaInProgress{
+  font-size: 28px;
+  align-self: flex-start;
+  margin-bottom: 32px;
+}
+
+.titleArea{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seeDetails{
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+.emptyArea, .notEmptyArea{
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 10px;
+  
+  background: var(--mainBox);
+  -webkit-backdrop-filter: standard(8px);
+  backdrop-filter: blur(8px);
+  
+  color: #fff;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notEmptyArea{
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 20px;
+}
+
+.biggestArea, .percentArea{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.biggerNumberData{
+    font-size: 28px;
+    line-height: 43px;
+    color: #fff;
+}
+
+.smallerNumberData{
+    font-size: 22px;
+    line-height: 43px;
+    color: #fff;
+}
+
+.sublabel{
+    font-size: 11px;
+    color: #fff;
+}

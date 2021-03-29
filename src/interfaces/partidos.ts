@@ -27,4 +27,8 @@ export interface PartidoProps {
   bandeiras: String[];
   numerosRepresentantes: NumerosRepresentantes;
   representantes: Representante[];
+  gastos: {
+    emReais: string;
+    emPorcentagem: string;
+  }
 }

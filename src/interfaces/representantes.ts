@@ -5,4 +5,8 @@ export interface RepresentanteProps {
     role: string;
     estado: string;
     descricao: string;
+    gastos: {
+      emReais: string;
+      emPorcentagem: string;
+    }
   }
