@@ -17,7 +17,7 @@ const RepresentativePersonCard = ({
   linkToRedirect,
 }: RepresentativePersonCardProps) => {
   return (
-    <Link href={`/${linkToRedirect}`}>
+    <Link href={`${linkToRedirect}`}>
       <a>
         <div className={styles.representativePersonCardComponent}>
           <img className={styles.personImg} src={`${imgUrl}`} alt="Pessoa" />

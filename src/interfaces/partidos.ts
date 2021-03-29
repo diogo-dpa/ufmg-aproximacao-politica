@@ -16,6 +16,8 @@ interface Representante {
   nome: string;
   role: string;
   estado: string;
+  imgUrl: string;
+  linkToRedirect: string;
 }
 
 export interface PartidoProps {

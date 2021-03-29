@@ -79,8 +79,8 @@ const Partidoss = ({
       <div className={styles.partidoContainer}>
         {representantes.map((item) => (
           <RepresentativePersonCard
-            imgUrl=""
-            linkToRedirect=""
+            imgUrl={item.imgUrl}
+            linkToRedirect={item.linkToRedirect}
             personName={item.nome}
             role={item.role}
             state={item.estado}
