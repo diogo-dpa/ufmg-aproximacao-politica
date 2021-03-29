@@ -2,7 +2,7 @@ import { PartidoProps } from "../interfaces/partidos";
 
 export const partidoDataSample: PartidoProps[] = [
   {
-    imgUrl: "/images/psolImg.jpg",
+    imgUrl: "/images/mdbImg.jpg",
     nome: "MDB",
     descricao:
       "O MDB nasceu com propósitos: fazer oposição à ditadura e colaborar com a volta da Democracia. Criado a partir da extinção do pluripartidarismo, pelo Ato institucional nº 2, que instituiu o bipartidarismo, o MDB passou a incomodar quem detinha o poder. A ditadura reprimia e o MDB seguia firme. A partir das eleições de 1974, o Movimento cresceu e foi determinante na Lei de Anistia, em 1979, e nas Diretas Já, em 1984. Foi em 1974 que o MDB lançou a candidatura de Ulysses Guimarães contra o militar Ernesto Geisel. O MDB perdeu a batalha, mas saiu fortalecido para a guerra, por ter percorrido o país com os ideais democráticos.",
@@ -42,28 +42,38 @@ export const partidoDataSample: PartidoProps[] = [
     representantes: [
       {
         nome: "Alceu Moreira",
-        role: "Deputado Fedral",
+        role: "Deputado Federal",
         estado: "RS",
+        imgUrl: "/images/alceuMoreira.jpg",
+        linkToRedirect: "/representantes/AlceuMoreira"
       },
       {
         nome: "Dulce Miranda",
         role: "Deputado Federal",
         estado: "TO",
+        imgUrl: "/images/dulceMiranda.jpg",
+        linkToRedirect: "/representantes/DulceMiranda"
       },
       {
-        nome: "Confúcio Moura",
-        role: "Senador",
-        estado: "RO",
+        nome: "Bruno Covas",
+        role: "Prefeito",
+        estado: "SP",
+        imgUrl: "/images/brunoCovas.jpg",
+        linkToRedirect: "/representantes/BrunoCovas"
       },
       {
         nome: "Ibanis Rocha",
         role: "Governador",
         estado: "DF",
+        imgUrl: "/images/ibanisRocha.jpg",
+        linkToRedirect: "/representantes/IbanisRocha"
       },
       {
         nome: "Jader Barbalho",
         role: "Senador",
         estado: "PA",
+        imgUrl: "/images/jaderBarbalho.jpg",
+        linkToRedirect: "/representantes/JaderBarbalho"
       },
     ],
   },
@@ -110,26 +120,36 @@ export const partidoDataSample: PartidoProps[] = [
         nome: "Paulo Lemos",
         role: "Deputado Estadual",
         estado: "AM",
+        imgUrl: "/images/pauloLemos.jpg",
+        linkToRedirect: "/representantes/PauloLemos"
       },
       {
         nome: "David Miranda",
         role: "Deputado Federal",
         estado: "RJ",
+        imgUrl: "/images/davidMiranda.jpg",
+        linkToRedirect: "/representantes/DavidMiranda"
       },
       {
         nome: "Áurea Carolina",
         role: "Deputado Federal",
         estado: "MG",
+        imgUrl: "/images/aureaCarolina.jpg",
+        linkToRedirect: "/representantes/AureaCarolina"
       },
       {
         nome: "Luiza Erundina",
         role: "Deputado Federal",
         estado: "SP",
+        imgUrl: "/images/luizaErundina.jpg",
+        linkToRedirect: "/representantes/LuizaErundina"
       },
       {
         nome: "Cido Sobral",
         role: "Prefeito",
         estado: "Marabá Paulista/SP",
+        imgUrl: "/images/cidoSobral.jpg",
+        linkToRedirect: "/representantes/CidoSobral"
       },
     ],
   }

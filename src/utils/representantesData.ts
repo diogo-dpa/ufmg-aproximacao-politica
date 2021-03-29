@@ -2,7 +2,7 @@ export const representanteData = [
     {
       imgUrlPessoa: "/images/aureaCarolina.jpg",
       imgUrlPartido: "/images/psolImg.jpg",
-      nome: "Áurea Carolina",
+      nome: "Aurea Carolina",
       role: "Deputado Estadual",
       estado: "MG",
       descricao:

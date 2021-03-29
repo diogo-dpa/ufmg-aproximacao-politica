@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 import { GetStaticProps, GetStaticPaths } from "next";
 import styles from "../../styles/pages/Representantes.module.css";
@@ -15,7 +14,6 @@ const Representante = ({
   descricao,
 }: RepresentanteProps) => {
   return (
-    // <Layout title="Home | Next.js + TypeScript Example">
     <div className={styles.fullPage}>
       <MenuMobile />
       <div className={styles.pessoaContainer}>
@@ -47,7 +45,6 @@ const Representante = ({
         <div className={styles.emptyArea}>Em desenvolvimento</div>
       </div>
     </div>
-    // </Layout>
   );
 };
 
@@ -57,7 +54,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   try {
     const nome = params?.nome;
     const item = representanteData.find(
-      (data) => data.nome.toUpperCase() === nome,
+      (data) => data.nome.replace(" ", "") === nome,
       );
       // By returning { props: item }, the StaticPropsDetail component
       // will receive `item` as a prop at build time
@@ -69,9 +66,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   // Get the paths we want to pre-render based on users
-  const paths = representanteData.map((partido) => ({
-    params: { nome: partido.nome },
+  const paths = representanteData.map((representante) => ({
+    params: { nome: representante.nome.replace(" ", "") },
   }));
+
+  console.log('aaa', paths)
 
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
