@@ -12,13 +12,16 @@ const MenuMobile = () => {
       <Link href="/home">
         <a className={stylesModule.menuItem}>Home</a>
       </Link>
-      <Link href="/noticias">
+      <Link href="/emconstrucao">
+        <a className={stylesModule.menuItem}>Fórum</a>
+      </Link>
+      <Link href="/emconstrucao">
         <a className={stylesModule.menuItem}>Notícias</a>
       </Link>
-      <Link href="/partidos/teste">
+      <Link href="/emconstrucao">
         <a className={stylesModule.menuItem}>Partidos</a>
       </Link>
-      <Link href="/representantes/teste">
+      <Link href="/emconstrucao">
         <a className={stylesModule.menuItem}>Representantes</a>
       </Link>
       <Link href="/">
@@ -53,7 +56,8 @@ const styles = {
     width: "80vw",
   },
   bmMenu: {
-    background: "#979797BB",
+    background: "rgba(151, 191, 151, 0.733)",
+    backdropFilter: 'blur(10px)',
     padding: "2.5em 1.5em 0",
     fontSize: "1.15em",
   },
@@ -75,6 +79,7 @@ const styles = {
   },
   bmOverlay: {
     background: "rgba(0, 0, 0, 0.3)",
+    height: '100%',
   },
 };
 
