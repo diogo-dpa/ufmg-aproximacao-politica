@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { useState, useRef } from 'react';
+import { useRouter } from 'next/router';
 import { TextField } from "@material-ui/core";
 import styles from "../styles/pages/Cadastro.module.css";
 import { validateTextField } from '../utils/validateInputs';
 
 const Cadastro = () => {
+
+  const router = useRouter();
 
   const [errorName, setErrorName]= useState(false);
   const [errorNameMessage, setErrorNameMessage]= useState("");
@@ -21,18 +24,18 @@ const Cadastro = () => {
   const [errorConfirmPassword, setErrorConfirmPassword]= useState(false);
   const [errorConfirmPasswordMessage, setErrorConfirmPasswordMessage]= useState("");
   
-  const inputName = useRef();
-  const inputCPF = useRef();
-  const inputEmail = useRef();
-  const inputPassword = useRef();
-  const inputConfirmPassword = useRef();
+  const inputName = useRef(null);
+  const inputCPF = useRef(null);
+  const inputEmail = useRef(null);
+  const inputPassword = useRef(null);
+  const inputConfirmPassword = useRef(null);
 
   const handleRegisterUser = () => {
-    const resultValidateName = validateTextField(inputName?.current.value);
-    const resultValidateCPF = validateTextField(inputCPF?.current.value);
-    const resultValidateEmail = validateTextField(inputEmail?.current.value);
-    const resultValidatePassword = validateTextField(inputPassword?.current.value);
-    const resultValidateConfirmPassword = validateTextField(inputConfirmPassword?.current.value);
+    const resultValidateName = validateTextField(inputName.current.value);
+    const resultValidateCPF = validateTextField(inputCPF.current.value);
+    const resultValidateEmail = validateTextField(inputEmail.current.value);
+    const resultValidatePassword = validateTextField(inputPassword.current.value);
+    const resultValidateConfirmPassword = validateTextField(inputConfirmPassword.current.value);
   
     if(!resultValidateName || !resultValidateCPF ||
         !resultValidateEmail || !resultValidatePassword ||
@@ -80,7 +83,8 @@ const Cadastro = () => {
         }
         
       }else{
-        alert("Usuário cadastrado")
+        alert("Usuário cadastrado");
+        router.push("/cadastroConcluido");
       }
   }
 
@@ -93,7 +97,7 @@ const Cadastro = () => {
           variant="standard"
           label="Nome Completo"
           type="text"
-          ref={inputName}
+          inputRef={inputName}
           className={styles.inputText}
           error={errorName}
           helperText={errorNameMessage}
@@ -103,7 +107,7 @@ const Cadastro = () => {
           variant="standard"
           label="CPF"
           type="text"
-          ref={inputCPF}
+          inputRef={inputCPF}
           className={styles.inputText}
           error={errorCPF}
           helperText={errorCPFMessage}
@@ -113,7 +117,7 @@ const Cadastro = () => {
           variant="standard"
           label="Email"
           type="text"
-          ref={inputEmail}
+          inputRef={inputEmail}
           className={styles.inputText}
           error={errorEmail}
           helperText={errorEmailMessage}
@@ -123,7 +127,7 @@ const Cadastro = () => {
           variant="standard"
           label="Senha"
           type="password"
-          ref={inputPassword}
+          inputRef={inputPassword}
           className={styles.inputText}
           error={errorPassword}
           helperText={errorPasswordMessage}
@@ -133,16 +137,14 @@ const Cadastro = () => {
           variant="standard"
           label="Confirme sua senha"
           type="password"
-          ref={inputConfirmPassword}
+          inputRef={inputConfirmPassword}
           className={styles.inputText}
           error={errorConfirmPassword}
           helperText={errorConfirmPasswordMessage}
         />
 
           <button type="button" className={styles.registerButton} onClick={handleRegisterUser}>
-            <Link href="/cadastroConcluido">
               Cadastrar
-            </Link>
           </button>
 
         <Link href="/">

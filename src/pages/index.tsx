@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from 'next/router';
 import { useState, useRef } from 'react';
 import { TextField } from "@material-ui/core";
 import styles from "../styles/pages/Home.module.css";
@@ -12,12 +13,14 @@ const Login = () => {
   const [errorPassword, setErrorPassword]= useState(false);
   const [errorPasswordMessage, setErrorPasswordMessage]= useState("");
 
-  const inputEmail = useRef();
-  const inputPassword = useRef();
+  const inputEmail = useRef(null);
+  const inputPassword = useRef(null);
+
+  const router = useRouter();
   
   const handleRegisterUser = () => {
-    const resultValidateEmail = validateTextField(inputEmail?.current.value);
-    const resultValidatePassword = validateTextField(inputPassword?.current.value);
+    const resultValidateEmail = validateTextField(inputEmail.current.value);
+    const resultValidatePassword = validateTextField(inputPassword.current.value);
   
     if(!resultValidateEmail || !resultValidatePassword){
 
@@ -39,6 +42,7 @@ const Login = () => {
         
       }else{
         alert("Usuário válido")
+        router.push('/home');
       }
   }
 
@@ -51,7 +55,7 @@ const Login = () => {
           variant="standard"
           label="Email"
           type="text"
-          ref={inputEmail}
+          inputRef={inputEmail}
           error={errorEmail}
           helperText={errorEmailMessage}
           className={styles.textInput}
@@ -61,7 +65,7 @@ const Login = () => {
           variant="standard"
           label="Senha"
           type="password"
-          ref={inputPassword}
+          inputRef={inputPassword}
           error={errorPassword}
           helperText={errorPasswordMessage}
           className={styles.textInput}
@@ -72,9 +76,7 @@ const Login = () => {
           className={styles.loginButton} 
           onClick={handleRegisterUser} 
         >
-          <Link href="/home">
             Entrar
-          </Link>
         </button>
 
         <div className={styles.usefulLink}>

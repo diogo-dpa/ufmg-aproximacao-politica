@@ -57,6 +57,10 @@ ul{
   color: #fff !important;
 }
 
+.MuiInputBase-input{
+  color: #fff !important;
+}
+
 .MuiInput-underline:before{
   border-bottom: 1px solid #fff !important;
 }

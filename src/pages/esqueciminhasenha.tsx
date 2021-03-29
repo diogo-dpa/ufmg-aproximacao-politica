@@ -9,10 +9,10 @@ const EsqueciMinhaSenha = () => {
   const [errorEmail, setErrorEmail]= useState(false);
   const [errorEmailMessage, setErrorEmailMessage]= useState("");
 
-  const inputEmail = useRef();
+  const inputEmail = useRef(null);
 
   const handleSubmit = () => {
-    const resultValidateEmail = validateTextField(inputEmail?.current.value);
+    const resultValidateEmail = validateTextField(inputEmail.current.value);
   
     if(!resultValidateEmail ){
         if(!resultValidateEmail){
@@ -40,7 +40,7 @@ const EsqueciMinhaSenha = () => {
           variant="standard"
           label="Email"
           type="email"
-          ref={inputEmail}
+          inputRef={inputEmail}
           error={errorEmail}
           helperText={errorEmailMessage}
           className={styles.inputText}
@@ -51,9 +51,7 @@ const EsqueciMinhaSenha = () => {
           className={styles.sendButton} 
           onClick={handleSubmit}
         >
-          <Link href="/">
             Enviar
-          </Link>
         </button>
 
         <Link href="/">
