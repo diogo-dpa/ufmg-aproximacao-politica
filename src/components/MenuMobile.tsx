@@ -8,7 +8,7 @@ import stylesModule from "../styles/components/MenuMobile.module.css";
 
 const MenuMobile = () => {
   return (
-    <Menu right styles={styles}>
+    <Menu className={stylesModule.menu} right styles={styles}>
       <Link href="/home">
         <a className={stylesModule.menuItem}>Home</a>
       </Link>
@@ -40,20 +40,17 @@ const styles = {
   bmBurgerBars: {
     background: "#fff",
   },
-  bmBurgerBarsHover: {
-    background: "#a90000",
-  },
   bmCrossButton: {
     height: "24px",
     width: "24px",
   },
   bmCross: {
-    background: "#bdc3c7",
+    background: "#8c959b",
   },
   bmMenuWrap: {
     position: "fixed",
+    top: '0px',
     width: "80vw",
-    height: "100%",
   },
   bmMenu: {
     background: "#979797BB",
@@ -66,8 +63,11 @@ const styles = {
   bmItemList: {
     color: "#fff",
     padding: "0.8em",
+    paddingBottom: "50px",
     display: "flex",
     flexDirection: "column",
+    justifyContent: "flex-end",
+    alignItems: "flex-end",
   },
   bmItem: {
     display: "inline-block",

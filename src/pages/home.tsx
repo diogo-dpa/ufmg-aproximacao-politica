@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import styles from "../styles/pages/LoggedHome.module.css";
 
 import { GetStaticProps } from "next";
@@ -35,8 +34,7 @@ interface LoggedHomeProps {
 
 const LoggedHome = ({ politicalParties }: LoggedHomeProps) => {
   return (
-    // <Layout title="">
-    <div className={styles.fullPage}>
+    <div className={styles.fullPage} >
       <MenuMobile />
       <h1 className={styles.mainTitle}>Acompanhe o dia a dia na política</h1>
 
@@ -55,7 +53,6 @@ const LoggedHome = ({ politicalParties }: LoggedHomeProps) => {
         </div>
       </div>
     </div>
-    // </Layout>
   );
 };
 
